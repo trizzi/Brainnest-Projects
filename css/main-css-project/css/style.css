@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Utilities*/
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: end;
+}
+
+.m-heading{
+    font-size: 2rem;
+    margin: 1rem 0;
+    line-height: 1.1;
+}
+
+.l-heading{
+    font-size: 3rem;
+    color: #f9faf8;;
+    line-height: 1.1;
+}
+
+.py-1{padding: 1.5rem 0;}
+.py-2{padding: 2rem 0}
+
+.bg-light{
+    background: #fff;
+    color: #1f2937;
+}
+
+.bg-dark{
+    background: #1f2937;
+    color: #fff;
+}
+
+.lead{
+    font-size: 18px;
+    margin: 2rem 0;
+    color: #e5e7eb;
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: #3882f6;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background: #74a4f1;
+}
+
+.btn-light{
+    display: inline-block;
+    border: 2px solid #fff;
+    color:#fff;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+
+.btn-light:hover{
+    background: #6b9ef0;
+}
+
+/*Nav bar*/
+#navbar{
+    display: flex;
+    position: -webkit-sticky;
+    /* position sticky is not supported by safari 
+    brower hence the inclusion of webkit-sticky above */
+    position: sticky;
+    top: 0;
+    background: #1f2937;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem 10rem;
+}
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover{
+    background: #2b333f;
+    border-radius: 5px;
+}
+
+/*Showcase*/
+#showcase{
+    background: #1f2937;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    color: #f9faf8;
+    padding: 15rem 10rem;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+#showcase .showcase-img{
+    width: 800px;
+    height: 350px;
+    background: #52565e;
+}
+
+#showcase .showcase-img p{
+    text-align: center;
+    padding: 12rem 0;
+}
+
+/*Information*/
+#information .items{
+    display: flex;
+}
+#information .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+#information .items .item .img{
+    border: 5px solid #3882f6;
+    padding: 6rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+}
+
+/* Testimonial */
+#testimonial{
+   background-color: #b3b7be;
+}
+
+#testimonial .testimonial-content{
+    font-style: italic;
+    font-size: 36px;
+    text-align: center;
+    padding: 3rem 5rem;
+}
+
+#testimonial .testimonial-content span{
+    padding-left: 45rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+/* Sign up */
+#sign-up{
+ padding: 5rem 10rem;   
+ background: #fff;
+}
+
+#sign-up .sign-up-content{
+  background: #3882f6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 5rem;
+}
