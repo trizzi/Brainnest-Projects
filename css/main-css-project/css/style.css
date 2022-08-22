@@ -6,6 +6,12 @@
     padding: 0;
 }
 
+:root{
+    --primary-color: #1f2937; 
+    --secondary-color: #3882f6;
+    --tertiary-color: #b3b7be;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
@@ -52,7 +58,7 @@ a{
 }
 
 .bg-dark{
-    background: #1f2937;
+    background: var(--primary-color);
     color: #fff;
 }
 
@@ -65,7 +71,7 @@ a{
 .btn{
     display: inline-block;
     color: #fff;
-    background: #3882f6;
+    background: var(--secondary-color);
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
@@ -94,7 +100,7 @@ a{
     brower hence the inclusion of webkit-sticky above */
     position: sticky;
     top: 0;
-    background: #1f2937;
+    background: var(--primary-color);
     color: #fff;
     justify-content: space-between;
     z-index: 1;
@@ -120,7 +126,7 @@ a{
 
 /*Showcase*/
 #showcase{
-    background: #1f2937;
+    background: var(--primary-color);
     height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -157,7 +163,7 @@ a{
     padding: 1rem;
 }
 #information .items .item .img{
-    border: 5px solid #3882f6;
+    border: 5px solid var(--secondary-color);
     padding: 6rem;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -166,7 +172,7 @@ a{
 
 /* Testimonial */
 #testimonial{
-   background-color: #b3b7be;
+   background-color: var(--tertiary-color);
 }
 
 #testimonial .testimonial-content{
@@ -189,7 +195,7 @@ a{
 }
 
 #sign-up .sign-up-content{
-  background: #3882f6;
+  background: var(--secondary-color);
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
