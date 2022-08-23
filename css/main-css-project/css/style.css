@@ -15,6 +15,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
+    overflow-x: hidden;
 }
 
 a{
@@ -26,7 +27,6 @@ a{
     max-width: 1100px;
     margin: auto;
     padding: 0 2rem;
-    overflow: hidden;
 }
 
 .text-center{
@@ -78,6 +78,7 @@ a{
 }
 .btn:hover{
     background: #74a4f1;
+    transform: scale(1.5);
 }
 
 .btn-light{
@@ -90,6 +91,7 @@ a{
 
 .btn-light:hover{
     background: #6b9ef0;
+    transform: scale(1.5);
 }
 
 /*Nav bar*/
@@ -157,17 +159,23 @@ a{
 #information .items{
     display: flex;
 }
+
 #information .items .item{
     flex: 1;
     text-align: center;
     padding: 1rem;
 }
+
 #information .items .item .img{
     border: 5px solid var(--secondary-color);
     padding: 6rem;
     border-radius: 10px;
     margin-bottom: 1rem;
+    transition: transform 0.9s;
+}
 
+#information .items .item .img:hover{
+    transform: rotate(120deg) scale(1.5) translateY(-100px);
 }
 
 /* Testimonial */
@@ -200,4 +208,85 @@ a{
   display: flex;
   justify-content: space-around;
   padding: 2rem 5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 414px) {
+    .l-heading{
+        font-size: 2rem;
+    }
+
+    .m-heading{
+        font-size: 1.5rem;
+    }
+
+    .lead{
+        font-size: 16px;
+    }
+
+    .container{
+        width: 300px;
+    }
+ 
+    /* Navbar */
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    #navbar .logo{
+        text-align: center;
+    }
+
+    #navbar ul{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    #navbar ul li{
+        border-bottom: 2px dashed #b3b7be;
+        padding: 1rem;
+    }
+
+    #showcase{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        height: 50%;
+    }
+
+    #showcase .showcase-content{
+        margin-bottom: 1.5rem;
+    }
+
+    #showcase .showcase-img{
+        width: 300px;
+        height: 250px;
+    }
+
+    #information{
+        padding: 2rem;
+    }
+
+    #information .items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #testimonial .testimonial-content{
+        padding: 2rem;
+        font-size: 18px;
+    }
+
+    #sign-up{
+        padding: 2rem;
+    }
+
+    #sign-up .sign-up-content{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
 }
