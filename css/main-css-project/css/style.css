@@ -211,6 +211,7 @@ a{
   box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
+/* Mobile design */
 @media screen and (max-width: 414px) {
     .l-heading{
         font-size: 2rem;
@@ -290,3 +291,67 @@ a{
         padding: 2rem;
     }
 }
+
+/* Miniscreens designs */
+/* @media screen and (max-width: 900px){
+    .l-heading{
+        font-size: 2rem;
+    }
+
+    .m-heading{
+        font-size: 1.5rem;
+    }
+
+    .lead{
+        font-size: 16px;
+    }
+
+    .container{
+        width: 600px;
+    }
+ 
+    /* Navbar */
+    /*
+    #navbar{
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 1rem;
+    }
+
+    #showcase{
+        height: 100%;
+        padding: 4rem;
+    }
+
+    #showcase .showcase-content{
+        margin-bottom: 1.5rem;
+    }
+
+    #showcase .showcase-img{
+        width: 350px;
+        height: 300px;
+    }
+
+    #information{
+        padding: 2rem;
+    }
+
+    #information .items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #testimonial .testimonial-content{
+        padding: 2rem;
+        font-size: 25px;
+    }
+
+    #sign-up{
+        padding: 2rem;
+    }
+
+    #sign-up .sign-up-content{
+        display: flex;
+        padding: 2rem;
+    } 
+} */
