@@ -15,7 +15,7 @@ let computerPlay = Math.floor(
   // And multiplies it with the index number from the computerselection array
 );
 
-// Retuens a whole number
+// Returns a whole number
 console.log(
   'The computer choose ' + computerPlay,
   computerSelection[computerPlay]
@@ -129,64 +129,3 @@ reloadButton.addEventListener('click', (e) => {
   console.log('click');
 });
 
-// let computerSelection = ['rock', 'paper', 'scissors'];
-// let computerPlay = Math.floor(
-//   Math.random() * computerSelection.length
-// );
-
-// console.log(
-//   'The computer choose ' + computerPlay,
-//   computerSelection[computerPlay]
-// );
-
-// let playerSelection = prompt(
-//   'Do you choose rock, paper or scissors?'
-// );
-// let computerPlay = Math.random();
-
-// if (computerPlay < 0.34) {
-//   computerPlay = 'rock';
-// } else if (computerPlay <= 0.67) {
-//   computerPlay = 'paper';
-// } else {
-//   computerPlay = 'scissors';
-// }
-
-// const playRound = (playerSelection, computerSelection) => {
-//   if (playerSelection.toLowerCase() === computerSelection) {
-//     return 'The result is a tie!';
-//   }
-
-//   if (playerSelection.toLowerCase() === 'rock') {
-//     if (computerSelection === 'scissors') {
-//       return 'You Win! Rock beats Scissors"';
-//     } else {
-//       return 'You Lose! Paper beats Rock"';
-//     }
-//   }
-
-//   if (playerSelection.toLowerCase() === 'paper') {
-//     if (computerSelection === 'rock') {
-//       return 'You win! Paper beats Rock';
-//     } else {
-//       if (computerSelection === 'scissors') {
-//         return 'You Lose! Scissors beats Paper';
-//       }
-//     }
-//   }
-
-//   if (playerSelection.toLowerCase() === 'scissors') {
-//     if (computerSelection === 'rock') {
-//       return 'You lose! Rock beats Scissors';
-//     } else {
-//       if (computerSelection === 'paper') {
-//         return 'You Win! Scissors beats Rock';
-//       }
-//     }
-//   }
-// };
-
-// const computerSelection = computerPlay;
-// console.log('Player Selection: ' + playerSelection);
-// console.log('Computer Selection: ' + computerSelection);
-// console.log(playRound(playerSelection, computerSelection));
