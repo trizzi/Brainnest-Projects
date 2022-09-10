@@ -8,18 +8,18 @@ const win = 'You Win this round!';
 const lose = 'You Lose this round!';
 const tie = 'This round is a tie!';
 
-let computerSelection = ['rock', 'paper', 'scissors'];
-let computerPlay = Math.floor(
-  Math.random() * computerSelection.length
-  // Returns random decimal numbers from 0 to less than one
-  // And multiplies it with the index number from the computerselection array
-);
+const play = (computerPlay) => {
+  let computerSelection = ['rock', 'paper', 'scissors'];
+  let computerPlay = Math.floor(
+    Math.random() * computerSelection.length
+    // Returns random decimal numbers from 0 to less than one
+    // And multiplies it with the index number from the computerselection array
+  );
+  return computerPlay;
+};
 
 // Retuens a whole number
-console.log(
-  'The computer choose ' + computerPlay,
-  computerSelection[computerPlay]
-);
+console.log('The computer choose ' + play());
 
 // Prompt Message
 let playerSelection = prompt(
@@ -73,17 +73,8 @@ function game() {
       'you choose ' + playerSelection.toLowerCase()
     );
 
-    let computerSelection = ['rock', 'paper', 'scissors'];
-    let computerPlay = Math.floor(
-      Math.random() * computerSelection.length
-      // Returns random decimal numbers from 0 to less than one
-      // And multiplies it with the index number from the computerselection array
-    );
-    // Retuens a whole number
-    console.log(
-      'The computer choose ' + computerPlay,
-      computerSelection[computerPlay]
-    );
+    2; // Retuens a whole number
+    console.log('The computer choose ' + play());
 
     console.log(
       playRound(playerSelection, computerSelection)
